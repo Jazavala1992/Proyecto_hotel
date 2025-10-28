@@ -1,1282 +1,1758 @@
-# 🏨 Sistema de Gestión Hotelera v2.0# 🏨 Sistema de Gestión Hotelera v2.0# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera
+# 🏨 Sistema de Gestión Hotelera Multi-Base de Datos# 🏨 Sistema de Gestión Hotelera v2.0# 🏨 Sistema de Gestión Hotelera v2.0# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera# 🏨 Sistema de Gestión Hotelera
 
 
 
-Sistema completo de gestión hotelera con **arquitectura multi-base de datos**. Soporta PostgreSQL, MySQL, SQL Server y Oracle.
+<div align="center">
 
 
 
----Sistema completo de gestión hotelera con **arquitectura multi-base de datos**, soporte para PostgreSQL, MySQL, SQL Server y Oracle.
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)Sistema completo de gestión hotelera con **arquitectura multi-base de datos**. Soporta PostgreSQL, MySQL, SQL Server y Oracle.
 
+![Node](https://img.shields.io/badge/node-16%2B-brightgreen.svg)
 
+![React](https://img.shields.io/badge/react-18.2.0-61dafb.svg)
+
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+![PostgreSQL](https://img.shields.io/badge/postgresql-15-336791.svg)---Sistema completo de gestión hotelera con **arquitectura multi-base de datos**, soporte para PostgreSQL, MySQL, SQL Server y Oracle.
+
+![MySQL](https://img.shields.io/badge/mysql-8.0-4479A1.svg)
+
+![SQL Server](https://img.shields.io/badge/sql%20server-2019-CC2927.svg)
+
+![Oracle](https://img.shields.io/badge/oracle-21c-F80000.svg)
 
 ## 🚀 Inicio Rápido
 
+**Sistema completo de gestión hotelera con arquitectura multi-base de datos**
 
+
+
+[Características](#-características) • [Instalación](#-inicio-rápido) • [API](#-api-endpoints) • [Documentación](#-documentación) • [Contribuir](#-contribuir)
 
 ### 1. Levantar Base de Datos---Sistema de base de datos para gestión hotelera con soporte para PostgreSQL y Oracle.
 
+</div>
 
+
+
+---
 
 ```bash
+
+## 📋 Tabla de Contenidos
 
 docker-compose up -d postgres
 
-```## 🚀 Inicio Rápido
+- [Características](#-características)
+
+- [Tecnologías](#-tecnologías)```## 🚀 Inicio Rápido
+
+- [Arquitectura](#-arquitectura)
+
+- [Inicio Rápido](#-inicio-rápido)
+
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+
+- [API Endpoints](#-api-endpoints)### 2. Iniciar Backend
+
+- [Funcionalidades SQL](#-funcionalidades-sql-avanzadas)
+
+- [Cambiar Base de Datos](#-cambiar-base-de-datos)
+
+- [Testing](#-testing)
+
+- [Datos de Prueba](#-datos-de-prueba)```bash### **1. Levantar Base de Datos (PostgreSQL)**## 📁 Estructura del ProyectoSistema de base de datos para gestión hotelera con soporte para PostgreSQL y Oracle.
+
+- [Documentación](#-documentación)
+
+- [Contribuir](#-contribuir)cd backend
+
+- [Troubleshooting](#-troubleshooting)
+
+- [Licencia](#-licencia)npm install
 
 
 
-### 2. Iniciar Backend
+---npm start
 
 
 
-```bash### **1. Levantar Base de Datos (PostgreSQL)**## 📁 Estructura del ProyectoSistema de base de datos para gestión hotelera con soporte para PostgreSQL y Oracle.
-
-cd backend
-
-npm install
-
-npm start
-
-``````bash
+## ✨ Características``````bash
 
 
 
-### 3. Iniciar Frontenddocker-compose up -d postgres
+### 🎯 Funcionalidades Principales
 
 
 
-```bash``````
+- ✅ **Multi-Base de Datos**: Cambia entre PostgreSQL, MySQL, SQL Server y Oracle sin modificar código### 3. Iniciar Frontenddocker-compose up -d postgres
 
-cd frontend
+- ✅ **API RESTful**: 11 endpoints completamente funcionales
 
-npm install
+- ✅ **Frontend React**: Interfaz moderna y responsive
 
-npm start
+- ✅ **Adaptador Universal**: Traduce queries automáticamente entre gestores
 
-```### **2. Iniciar Backend**proyecto-hotel/
+- ✅ **Funciones Avanzadas SQL**: Procedimientos, triggers, cursores```bash``````
+
+- ✅ **Docker Ready**: Levanta PostgreSQL con un comando
+
+- ✅ **Gestión Completa**: Hoteles, clientes, reservas, pagos, facturascd frontend
 
 
+
+### 🔥 Características Técnicasnpm install
+
+
+
+- 🚀 **Arquitectura Limpia**: Patrón Factory + Adapternpm start
+
+- 📦 **Sin Vendor Lock-in**: Independencia total del gestor de BD
+
+- 🔄 **Hot Swap**: Cambia de BD reiniciando el servidor```### **2. Iniciar Backend**proyecto-hotel/
+
+- 🎨 **Componentizado**: 6 componentes React reutilizables
+
+- 🛡️ **Manejo de Errores**: Logging centralizado
+
+- 📝 **Documentación Completa**: README + guías especializadas
 
 ### 4. Acceder
 
+---
 
+
+
+## 🛠️ Tecnologías
 
 - **Frontend**: http://localhost:3000```bash├── docker-compose.yml          # Contenedores PostgreSQL y Oracle## 📁 Estructura del ProyectoSistema de base de datos para gestión hotelera con soporte para PostgreSQL y Oracle.Sistema de base de datos para gestión hotelera con soporte para PostgreSQL y Oracle.
 
-- **Backend API**: http://localhost:3001
+### Backend
 
-- **PostgreSQL**: localhost:5432cd backend
+- **Runtime**: Node.js 16+- **Backend API**: http://localhost:3001
+
+- **Framework**: Express 4.18.2
+
+- **Drivers DB**: - **PostgreSQL**: localhost:5432cd backend
+
+  - `pg` 8.11.3 (PostgreSQL)
+
+  - `mysql2` 3.6.0 (MySQL) - opcional
+
+  - `mssql` 10.0.1 (SQL Server) - opcional
+
+  - `oracledb` 6.2.0 (Oracle) - opcional## 📊 Tecnologíasnpm start
 
 
 
-## 📊 Tecnologíasnpm start
+### Frontend
 
+- **Framework**: React 18.2.0
 
+- **HTTP Client**: Axios 1.5.0- **Backend**: Node.js + Express 4.18.2```├── benchmark.py                # Script de benchmark (PostgreSQL)
 
-- **Backend**: Node.js + Express 4.18.2```├── benchmark.py                # Script de benchmark (PostgreSQL)
+- **Build Tool**: Create React App
 
 - **Frontend**: React 18.2.0  
 
-- **Base de Datos**: PostgreSQL 15 (soporta MySQL, SQL Server, Oracle)
+### Base de Datos
 
-- **Adaptador**: Convierte queries automáticamente entre gestores
+- **PostgreSQL** 15 (por defecto)- **Base de Datos**: PostgreSQL 15 (soporta MySQL, SQL Server, Oracle)
+
+- **MySQL** 8.0 (soportado)
+
+- **SQL Server** 2019 (soportado)- **Adaptador**: Convierte queries automáticamente entre gestores
+
+- **Oracle** 21c (soportado)
 
 ### **3. Iniciar Frontend**├── README.md                   # Este archivo
 
----
+### DevOps
 
+- **Containerización**: Docker + Docker Compose---
 
-
-## 🗂️ Estructura
-
-```bash└── init-scripts/              # Scripts de inicialización PostgreSQL```
-
-```
-
-proyecto-hotel/cd frontend
-
-├── backend/
-
-│   ├── config/npm install    ├── create-tables.sql
-
-│   │   ├── db-multi.js        # Factory de conexiones
-
-│   │   └── db-adapter.js      # Adaptador universalnpm start
-
-│   ├── routes/
-
-│   │   ├── hotels.js```    └── insert-data.sqlproyecto-hotel/
-
-│   │   ├── clients.js
-
-│   │   ├── reservations.js
-
-│   │   ├── payments.js
-
-│   │   └── invoices.js### **4. Acceder al Sistema**```
-
-│   ├── server.js
-
-│   └── .env
-
-│
-
-├── frontend/- **Frontend**: http://localhost:3000├── docker-compose.yml          # Contenedores PostgreSQL y Oracle## 📁 Estructura del Proyecto## 📁 Estructura del Proyecto
-
-│   ├── src/
-
-│   │   ├── components/- **Backend API**: http://localhost:3001
-
-│   │   │   ├── HotelList.js
-
-│   │   │   ├── HotelRooms.js- **PostgreSQL**: localhost:5432## 🚀 Inicio Rápido
-
-│   │   │   ├── TopClient.js
-
-│   │   │   ├── ReservationForm.js
-
-│   │   │   ├── PendingPayments.js
-
-│   │   │   └── InvoiceGenerator.js---├── helper.sh                   # Script interactivo de ayuda
-
-│   │   ├── api.js
-
-│   │   └── App.js
-
-│   └── package.json
-
-│## 📊 Tecnologías### Opción 1: Usar el Helper Script (Recomendado)
-
-├── init-scripts/
-
-│   ├── 01-create-tables.sql
-
-│   ├── 02-insert-data.sql
-
-│   ├── 03-functions.sql### **Backend**├── benchmark.py                # Script de benchmark (PostgreSQL)
-
-│   ├── 04-procedures.sql
-
-│   ├── 05-triggers.sql- Node.js + Express 4.18.2
-
-│   └── 06-funcionalidades-adicionales.sql
-
-│- Adaptador multi-base de datos```bash
-
-├── docs/
-
-│   ├── GUIA_MIGRACION_BASES_DATOS.md- REST API con 11 endpoints
-
-│   └── GUIA_MULTI_BASE_DATOS.md
-
-│- Soporte para PostgreSQL, MySQL, SQL Server, Oracle./helper.sh├── init-scripts/              # Scripts de inicialización PostgreSQL
-
-├── docker-compose.yml
-
-└── README.md
-
-```
-
-### **Frontend**```
-
----
-
-- React 18.2.0
-
-## 📡 API Endpoints
-
-- Axios para API calls│   ├── create-tables.sql``````
-
-### Hoteles
-
-- `GET /api/hotels` - Listar todos- 6 componentes principales
-
-- `GET /api/hotels/:id` - Obtener uno
-
-- `GET /api/hotels/:id/rooms` - HabitacionesEste script interactivo te permite:
-
-
-
-### Clientes### **Base de Datos**
-
-- `GET /api/clients` - Listar todos
-
-- `GET /api/clients/top/:hotelId` - Cliente más recurrente- PostgreSQL 15 (por defecto)- 🚀 Levantar/detener contenedores│   └── insert-data.sql
-
-
-
-### Reservas- Funciones PL/pgSQL
-
-- `GET /api/reservations` - Listar (con filtros)
-
-- `GET /api/reservations/:id` - Obtener una- Procedimientos almacenados- 🔌 Conectar a PostgreSQL o Oracle
-
-- `POST /api/reservations` - Crear (auto-crea cliente)
-
-- Triggers automáticos
-
-### Pagos
-
-- `GET /api/payments/pending` - Pendientes- Cursores explícitos- 📊 Ejecutar benchmark de PostgreSQL└── benchmark/                 # Scripts de benchmark y pruebasproyecto-hotel/proyecto-hotel/
-
-- `GET /api/payments/pending?hotelId=X` - Filtrar por hotel
-
-- `PATCH /api/payments/:id/mark-paid` - Marcar pagado
-
-
-
-### Facturas---- 📈 Ver estadísticas en tiempo real
-
-- `GET /api/invoices/:reservaId` - Generar factura
+- **Control de Versiones**: Git
 
 
 
 ---
 
-## 🗂️ Estructura del Proyecto- 🗂️ Ver logs    ├── 01_generar_datos_masivos_postgres_OPTIMIZADO.sql
-
-## 🗄️ Funcionalidades SQL
 
 
-
-### 1. Cliente Más Recurrente
-
-```sql```
-
-SELECT * FROM fn_cliente_mas_recurrente(1);
-
-```proyecto-hotel/
+## 🏗️ Arquitectura
 
 
-
-### 2. Calcular Costo├── backend/                    # API Node.js + Express### Opción 2: Manual    ├── 02_generar_datos_masivos_oracle_OPTIMIZADO.sql├── docker-compose.yml          # Contenedores PostgreSQL y Oracle├── docker-compose.yml          # Contenedores PostgreSQL y Oracle
-
-```sql
-
-SELECT calcular_costo_reserva(1, 101, '2024-01-15', '2024-01-20');│   ├── config/
 
 ```
 
-│   │   ├── db-multi.js        # Factory de conexiones multi-BD
+┌─────────────────────────────────────────────────────────────┐---- `GET /api/payments/pending?hotelId=X` - Filtrar por hotel
 
-### 3. Consultar Habitaciones
+│                      CLIENTE (Browser)                       │
 
-```sql│   │   └── db-adapter.js      # Adaptador universal de queries
+│                     React Frontend                           │
 
-CALL sp_consultar_habitaciones_hotel(1, 'Disponible', NULL, NULL);
+│                    http://localhost:3000                     │
 
-```│   ├── routes/**1. Levantar Bases de Datos**    ├── 05_benchmark_postgres.sql
+└──────────────────────┬──────────────────────────────────────┘## 🐳 Docker- `PATCH /api/payments/:reservaId/mark-paid` - Marcar como pagado3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)
 
+                       │ HTTP/REST
 
+                       ▼
 
-### 4. Generar Factura (con cursor)│   │   ├── hotels.js          # Endpoints de hoteles
+┌─────────────────────────────────────────────────────────────┐
 
-```sql
+│                   SERVIDOR (Node.js)                         │```bash
 
-SELECT * FROM generar_factura(1);│   │   ├── clients.js         # Endpoints de clientes
+│                  Express + API REST                          │
 
-```
+│                 http://localhost:3001                        │# Levantar
 
-│   │   ├── reservations.js    # Endpoints de reservas
+│                                                               │
 
-### 5. Trigger Automático
+│  ┌──────────────────────────────────────────────────────┐  │docker-compose up -d postgres### **Facturas**4. **RESERVA** - Reservaciones de habitaciones- 🔌 Conectar a PostgreSQL o Oracle└── benchmark/                 # Scripts de benchmark y pruebas└── benchmark/                 # Scripts de benchmark y pruebas
 
-- Actualiza estado de habitación al crear/cancelar reserva│   │   ├── payments.js        # Endpoints de pagos```bash    ├── 06_benchmark_oracle.sql├── benchmark.py                # Script de benchmark (PostgreSQL)├── benchmark.py                # Script de benchmark (PostgreSQL)
+│  │              Backend Routes (5)                       │  │
 
+│  │  /api/hotels  /api/clients  /api/reservations        │  │
 
+│  │  /api/payments  /api/invoices                        │  │
 
----│   │   └── invoices.js        # Endpoints de facturas
+│  └────────────────────┬─────────────────────────────────┘  │# Logs- `GET /api/invoices/:reservaId` - Generar factura de una reserva
 
+│                       │                                      │
 
+│  ┌────────────────────▼─────────────────────────────────┐  │docker logs postgres-hotel
 
-## 🔄 Cambiar Base de Datos│   ├── server.js              # Servidor principaldocker-compose up -d
+│  │           DB Adapter (Universal)                      │  │
 
+│  │      Traduce queries entre gestores                   │  │5. **REGISTRO** - Check-in/check-out
 
+│  │    $1 → ? (MySQL) → @p1 (SQL Server) → :1 (Oracle)  │  │
 
-### PostgreSQL → MySQL│   ├── package.json
+│  └────────────────────┬─────────────────────────────────┘  │# Conectar
 
+│                       │                                      │
 
+│  ┌────────────────────▼─────────────────────────────────┐  │docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db---
 
-```bash│   └── .env                   # Configuración (DB_TYPE, credenciales)```    └── metricas.sql
+│  │         DB Multi (Factory Pattern)                    │  │
 
-# 1. Instalar driver
+│  │     Crea pool según variable DB_TYPE                  │  │
 
-cd backend && npm install mysql2│
+│  └────────────────────┬─────────────────────────────────┘  │
 
+└───────────────────────┼──────────────────────────────────────┘# Detener6. **DESTROZO** - Daños reportados- 📊 Ejecutar benchmarks
 
+                        │
 
-# 2. Levantar MySQL├── frontend/                   # Aplicación React
+        ┌───────────────┼───────────────┐docker-compose down
 
-docker run -d --name mysql-hotel \
+        │               │               │
 
-  -e MYSQL_DATABASE=hotel_db \│   ├── src/
+        ▼               ▼               ▼## 🗄️ Base de Datos
 
-  -e MYSQL_USER=admin_hotel \
+   PostgreSQL        MySQL        SQL Server / Oracle
 
-  -e MYSQL_PASSWORD=hotel123 \│   │   ├── components/Esto crea:```├── init-scripts/              # Scripts de inicialización PostgreSQL├── init-scripts/              # Scripts de inicialización PostgreSQL
-
-  -p 3306:3306 mysql:8.0
-
-│   │   │   ├── HotelList.js         # Lista de hoteles
-
-# 3. Editar .env
-
-DB_TYPE=mysql│   │   │   ├── RoomSearch.js        # Búsqueda de habitaciones- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`
-
-DB_PORT=3306
-
-│   │   │   ├── TopClient.js         # Cliente más recurrente
-
-# 4. Reiniciar
-
-npm restart│   │   │   ├── ReservationForm.js   # Nueva reserva + tabla dinámica- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`
+   Port 5432      Port 3306      Port 1433 / 1521# Reset completo
 
 ```
-
-│   │   │   ├── PendingPayments.js   # Pagos pendientes con filtro
-
-Consulta `docs/GUIA_MIGRACION_BASES_DATOS.md` para conversión completa de scripts SQL.
-
-│   │   │   └── InvoiceGenerator.js  # Generador de facturas
-
----
-
-│   │   ├── api.js             # Cliente Axios
-
-## ⚙️ Configuración (.env)
-
-│   │   └── App.js             # Componente principal**2. Ejecutar Benchmark de PostgreSQL**## 🚀 Inicio Rápido│   ├── create-tables.sql│   ├── create-tables.sql
-
-```bash
-
-# Base de datos│   └── package.json
-
-DB_TYPE=postgresql  # postgresql | mysql | mssql | oracle
-
-DB_HOST=localhost│
-
-DB_PORT=5432        # 5432 PG, 3306 MySQL, 1433 SQL Server, 1521 Oracle
-
-DB_NAME=hotel_db├── init-scripts/               # Scripts SQL de inicialización
-
-DB_USER=admin_hotel
-
-DB_PASSWORD=hotel123│   ├── 01-create-tables.sql   # Creación de tablas```bash
-
-
-
-# Servidor│   ├── 02-insert-data.sql     # Datos de prueba (50 clientes, 10 hoteles)
-
-PORT=3001
-
-```│   ├── 03-functions.sql       # Funciones (fn_cliente_mas_recurrente, calcular_costo)python3 benchmark.py
-
-
-
----│   ├── 04-procedures.sql      # Procedimientos (sp_consultar_habitaciones)
-
-
-
-## 🧪 Testing│   ├── 05-triggers.sql        # Triggers (actualizar estado habitación)```### Opción 1: Usar el Helper Script (Recomendado)│   └── insert-data.sql│   └── insert-data.sql
-
-
-
-```bash│   └── 06-funcionalidades-adicionales.sql  # generar_factura con cursor
-
-# Verificar servidor
-
-curl http://localhost:3001/│
-
-
-
-# Listar hoteles├── docker-compose.yml          # PostgreSQL en Docker
-
-curl http://localhost:3001/api/hotels
-
-├── README.md                   # Este archivoEsto:
-
-# Habitaciones disponibles
-
-curl http://localhost:3001/api/hotels/1/rooms├── GUIA_MIGRACION_BASES_DATOS.md  # Guía para migrar a MySQL/Oracle/SQL Server
-
-
-
-# Cliente recurrente└── GUIA_MULTI_BASE_DATOS.md   # Opciones de conexión simultánea- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)
-
-curl http://localhost:3001/api/clients/top/1
-
-```
-
-# Pagos pendientes
-
-curl http://localhost:3001/api/payments/pending- Ejecuta 5 queries de prueba```bash├── init-scripts-oracle/       # Scripts de inicialización Oracle├── init-scripts-oracle/       # Scripts de inicialización Oracle
-
-
-
-# Generar factura---
-
-curl http://localhost:3001/api/invoices/1
-
-```- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)
-
-
-
----## 📡 API Endpoints
-
-
-
-## 📊 Datos de Prueba./helper.sh
-
-
-
-- 50 clientes bolivianos### **Hoteles**
-
-- 10 hoteles
-
-- 277 habitaciones- `GET /api/hotels` - Listar todos los hoteles**Tiempo estimado**: ~15 segundos para todo el proceso
-
-- 64 reservas
-
-- Precios: Bs. 120 - Bs. 350/noche- `GET /api/hotels/:id` - Obtener hotel específico
-
-
-
----- `GET /api/hotels/:id/rooms` - Habitaciones de un hotel```│   ├── create-tables.sql│   ├── create-tables.sql
-
-
-
-## 🎯 Características
-
-
-
-### Frontend### **Clientes**## 📊 Esquema de la Base de Datos
-
-✅ Lista de hoteles con estadísticas  
-
-✅ Búsqueda de habitaciones  - `GET /api/clients` - Listar todos los clientes
-
-✅ Cliente más recurrente  
-
-✅ Creación de reservas + auto-cliente  - `GET /api/clients/top/:hotelId` - Cliente más recurrente de un hotel
-
-✅ Tabla dinámica de habitaciones  
-
-✅ Filtro de pagos por hotel  
-
-✅ Generación de facturas  
-
-### **Reservas**### Tablas Principales
-
-### Backend
-
-✅ Arquitectura multi-BD  - `GET /api/reservations` - Listar reservas (filtros opcionales)
-
-✅ Adaptador universal  
-
-✅ Transacciones con rollback  - `GET /api/reservations/:id` - Obtener reserva específicaEste script interactivo te permite:│   └── insert-data.sql│   └── insert-data.sql
-
-✅ 11 endpoints REST  
-
-- `POST /api/reservations` - Crear nueva reserva (con auto-creación de cliente)
-
-### Base de Datos
-
-✅ 6 tablas relacionadas  1. **CLIENTE** - Información de clientes
-
-✅ 3 funciones PL/pgSQL  
-
-✅ 1 procedimiento almacenado  ### **Pagos**
-
-✅ 2 triggers automáticos  
-
-✅ 1 cursor explícito  - `GET /api/payments/pending` - Listar pagos pendientes2. **HOTEL** - Datos de hoteles- 🚀 Levantar/detener contenedores
-
-
-
----- `GET /api/payments/pending?hotelId=X` - Filtrar por hotel
-
-
-
-## 🐳 Docker- `PATCH /api/payments/:reservaId/mark-paid` - Marcar como pagado3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)
-
-
-
-```bash
-
-# Levantar
-
-docker-compose up -d postgres### **Facturas**4. **RESERVA** - Reservaciones de habitaciones- 🔌 Conectar a PostgreSQL o Oracle└── benchmark/                 # Scripts de benchmark y pruebas└── benchmark/                 # Scripts de benchmark y pruebas
-
-
-
-# Logs- `GET /api/invoices/:reservaId` - Generar factura de una reserva
-
-docker logs postgres-hotel
-
-5. **REGISTRO** - Check-in/check-out
-
-# Conectar
-
-docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db---
-
-
-
-# Detener6. **DESTROZO** - Daños reportados- 📊 Ejecutar benchmarks
-
-docker-compose down
-
-## 🗄️ Base de Datos
-
-# Reset completo
 
 docker-compose down -v
 
+**Flujo de Datos:**
+
+1. Cliente hace petición HTTP → Backend Express```
+
+2. Route recibe request → Llama a `executeQuery()`
+
+3. Adapter traduce query → Convierte sintaxis según `DB_TYPE`### **Esquema Principal**
+
+4. Factory crea pool → Conecta al gestor configurado
+
+5. Gestor ejecuta query → Retorna resultados---
+
+6. Backend normaliza datos → Envía JSON al cliente
+
+7. React actualiza UI → Usuario ve resultados### Relaciones Clave- 📈 Ver estadísticas en tiempo real    ├── 01_generar_datos_masivos_postgres_OPTIMIZADO.sql    ├── 01_generar_datos_masivos_postgres_OPTIMIZADO.sql
+
+
+
+---## 📚 Documentación
+
+
+
+## 🚀 Inicio Rápido```sql
+
+
+
+### Prerrequisitos| Archivo | Descripción |
+
+
+
+```bash|---------|-------------|CLIENTE (id_cliente, nombre, apellido_paterno, apellido_materno, fecha_naci)
+
+# Verificar instalaciones
+
+node --version  # >= 16.0.0| `docs/GUIA_MIGRACION_BASES_DATOS.md` | Migración a MySQL/SQL Server/Oracle |
+
+npm --version   # >= 8.0.0
+
+docker --version # >= 20.0.0| `docs/GUIA_MULTI_BASE_DATOS.md` | Conexión simultánea a múltiples BDs |HOTEL (id_hotel, nombre, direccion, ciudad, pais, telefono, email, categoria)
+
+git --version   # >= 2.0.0
+
 ```
 
-### **Esquema Principal**
 
----
 
-### Relaciones Clave- 📈 Ver estadísticas en tiempo real    ├── 01_generar_datos_masivos_postgres_OPTIMIZADO.sql    ├── 01_generar_datos_masivos_postgres_OPTIMIZADO.sql
-
-## 📚 Documentación
-
-```sql
-
-| Archivo | Descripción |
-
-|---------|-------------|CLIENTE (id_cliente, nombre, apellido_paterno, apellido_materno, fecha_naci)
-
-| `docs/GUIA_MIGRACION_BASES_DATOS.md` | Migración a MySQL/SQL Server/Oracle |
-
-| `docs/GUIA_MULTI_BASE_DATOS.md` | Conexión simultánea a múltiples BDs |HOTEL (id_hotel, nombre, direccion, ciudad, pais, telefono, email, categoria)
+### Instalación---HABITACION (id_hotel, id_habitacion, tipo, capacidad_personas, precio_noche, estado)- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`- 🗂️ Ver logs
 
 
 
----HABITACION (id_hotel, id_habitacion, tipo, capacidad_personas, precio_noche, estado)- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`- 🗂️ Ver logs
+#### 1️⃣ Clonar el Repositorio
 
 
 
-## 🔧 TroubleshootingRESERVA (id_reserva, fecha_reserva, fecha_ini, fecha_fin, num_huespedes, costo, estado, id_cliente, id_habitacion, id_hotel)
+```bash## 🔧 TroubleshootingRESERVA (id_reserva, fecha_reserva, fecha_ini, fecha_fin, num_huespedes, costo, estado, id_cliente, id_habitacion, id_hotel)
 
+git clone https://github.com/Jazavala1992/Proyecto_hotel.git
 
+cd Proyecto_hotel
+
+```
 
 ### Puerto ocupadoREGISTRO (id_registro, id_reserva, fecha_checkin, hora_checkin, fecha_checkout, hora_checkout)- `RESERVA` referencia a `HABITACION` usando ambas columnas
 
+#### 2️⃣ Levantar Base de Datos
+
 ```bash
 
-# Detener PostgreSQL localDESTROZO (id_destrozo, id_registro, fecha_reporte, descripcion, costo, estado)
+```bash
+
+# PostgreSQL (por defecto)# Detener PostgreSQL localDESTROZO (id_destrozo, id_registro, fecha_reporte, descripcion, costo, estado)
+
+docker-compose up -d postgres
 
 sudo service postgresql stop
 
-``````- `REGISTRO` referencia a `RESERVA` y `HABITACION`    ├── 02_generar_datos_masivos_oracle_OPTIMIZADO.sql    ├── 02_generar_datos_masivos_oracle_OPTIMIZADO.sql
+# Verificar que esté corriendo
+
+docker ps | grep postgres``````- `REGISTRO` referencia a `RESERVA` y `HABITACION`    ├── 02_generar_datos_masivos_oracle_OPTIMIZADO.sql    ├── 02_generar_datos_masivos_oracle_OPTIMIZADO.sql
+
+```
 
 
+
+#### 3️⃣ Configurar Backend
 
 ### No conecta a BD
 
 ```bash
 
-# Ver logs### **Funcionalidades SQL**- `DESTROZO` referencia a `REGISTRO`
+cd backend```bash
+
+
+
+# Instalar dependencias# Ver logs### **Funcionalidades SQL**- `DESTROZO` referencia a `REGISTRO`
+
+npm install
 
 docker logs postgres-hotel
 
+# Configurar variables de entorno
+
+cp .env.example .env
 
 
-# Reiniciar
 
-docker restart postgres-hotel#### **1. Función: Cliente Más Recurrente**### Opción 2: Manual
+# Editar .env con tus credenciales# Reiniciar
+
+nano .env
+
+```docker restart postgres-hotel#### **1. Función: Cliente Más Recurrente**### Opción 2: Manual
+
+
+
+**Archivo `.env` básico:**```
+
+```properties
+
+PORT=3001```sql
+
+DB_TYPE=postgresql
+
+DB_HOST=localhost### Frontend no conecta
+
+DB_PORT=5432
+
+DB_NAME=hotel_db```bashSELECT * FROM fn_cliente_mas_recurrente(1);  -- Hotel ID 1## 🔧 Comandos Útiles
+
+DB_USER=admin_hotel
+
+DB_PASSWORD=hotel123# Verificar backend
 
 ```
-
-```sql
-
-### Frontend no conecta
-
-```bashSELECT * FROM fn_cliente_mas_recurrente(1);  -- Hotel ID 1## 🔧 Comandos Útiles
-
-# Verificar backend
 
 curl http://localhost:3001/-- Retorna: cliente_id, nombre_cliente, apellido_cliente, total_reservas
 
+#### 4️⃣ Inicializar Base de Datos
 
 
-# Verificar puerto en frontend/src/api.js```    ├── 05_benchmark_postgres.sql    ├── 05_benchmark_postgres.sql
+
+```bash
+
+# Desde la raíz del proyecto# Verificar puerto en frontend/src/api.js```    ├── 05_benchmark_postgres.sql    ├── 05_benchmark_postgres.sql
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/01-create-tables.sql
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/02-insert-data.sql```
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/03-functions.sql
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/04-procedures.sql
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/05-triggers.sql
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/06-funcionalidades-adicionales.sql---
+
+
+
+# O con Docker:#### **2. Función: Calcular Costo de Reserva**### Conectar a PostgreSQL
+
+docker exec -i proyecto-hotel-postgres-1 psql -U admin_hotel -d hotel_db < init-scripts/01-create-tables.sql
+
+# ... repetir para los demás scripts## 🎓 Arquitectura
 
 ```
-
-
-
----
-
-#### **2. Función: Calcular Costo de Reserva**### Conectar a PostgreSQL
-
-## 🎓 Arquitectura
 
 ```sql
 
+#### 5️⃣ Iniciar Backend
+
 ```
 
-React (3000)SELECT calcular_costo_reserva(1, 101, '2024-01-15', '2024-01-20') as costo;**1. Levantar Bases de Datos**
+```bash
+
+cd backendReact (3000)SELECT calcular_costo_reserva(1, 101, '2024-01-15', '2024-01-20') as costo;**1. Levantar Bases de Datos**
+
+npm start
 
     ↓ HTTP
 
-Express (3001)-- Parámetros: id_hotel, id_habitacion, fecha_ini, fecha_fin
+# Deberías ver:
 
-    ↓ executeQuery()
+# ✅ Servidor corriendo en puerto 3001Express (3001)-- Parámetros: id_hotel, id_habitacion, fecha_ini, fecha_fin
 
-DB Adapter → Convierte $1 → ? | @p1 | :1``````bash
+# ✅ Conectado a base de datos: POSTGRESQL
 
-    ↓
+# ✅ Host: localhost:5432    ↓ executeQuery()
 
-DB Multi → getPool()
+# ✅ Base de datos: hotel_db
 
-    ↓
+```DB Adapter → Convierte $1 → ? | @p1 | :1``````bash
 
-PostgreSQL | MySQL | SQL Server | Oracle#### **3. Procedimiento: Consultar Habitaciones**docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db    ├── 06_benchmark_oracle.sql    ├── 06_benchmark_oracle.sql
+
+
+#### 6️⃣ Iniciar Frontend    ↓
+
+
+
+```bashDB Multi → getPool()
+
+# En otra terminal
+
+cd frontend    ↓
+
+npm install
+
+npm startPostgreSQL | MySQL | SQL Server | Oracle#### **3. Procedimiento: Consultar Habitaciones**docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db    ├── 06_benchmark_oracle.sql    ├── 06_benchmark_oracle.sql
+
+
+
+# Se abrirá automáticamente en http://localhost:3000```
 
 ```
 
 ```sql
+
+#### 7️⃣ Verificar Instalación
 
 **El adaptador traduce queries automáticamente:**
 
-- PostgreSQL: `$1, $2, $3`CALL sp_consultar_habitaciones_hotel(1, 'Disponible', NULL, NULL);```
+```bash
 
-- MySQL: `?, ?, ?`
+# Probar API- PostgreSQL: `$1, $2, $3`CALL sp_consultar_habitaciones_hotel(1, 'Disponible', NULL, NULL);```
 
-- SQL Server: `@p1, @p2, @p3`-- Parámetros: id_hotel, estado (opcional), tipo (opcional), capacidad_min (opcional)
+curl http://localhost:3001/
 
-- Oracle: `:1, :2, :3`
+# Respuesta: {"message":"Hotel API v2.0.0","database":"POSTGRESQL"}- MySQL: `?, ?, ?`
+
+
+
+# Probar endpoint de hoteles- SQL Server: `@p1, @p2, @p3`-- Parámetros: id_hotel, estado (opcional), tipo (opcional), capacidad_min (opcional)
+
+curl http://localhost:3001/api/hotels
+
+# Respuesta: Array con 10 hoteles- Oracle: `:1, :2, :3`
+
+```
 
 ``````bash
+
+---
 
 ✨ **Escribes una vez, funciona en 4 gestores.**
 
-
-
----
-
-#### **4. Función: Generar Factura con Cursor**### Conectar a Oracle
-
-**Versión**: 2.0.0  
-
-**Fecha**: 27 de octubre de 2025  ```sql
-
-**Estado**: ✅ Producción Ready
-
-SELECT * FROM generar_factura(1);  -- Reserva ID 1docker-compose up -d    └── metricas.sql    └── metricas.sql
-
--- Retorna: item, descripcion, monto (Estadía, Servicios, Impuestos, Daños, TOTAL)
-
-``````bash
+## 📁 Estructura del Proyecto
 
 
 
-#### **5. Trigger: Actualizar Estado Habitación**docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1```
+```
 
-```sql
+proyecto-hotel/---
 
--- Automático al crear reserva: Disponible → Ocupada```
+│
 
--- Automático al cancelar: Ocupada → Disponible
+├── backend/                          # Backend Node.js + Express#### **4. Función: Generar Factura con Cursor**### Conectar a Oracle
 
-`````````
+│   ├── config/
 
+│   │   ├── db-multi.js              # Factory: Crea pools según DB_TYPE**Versión**: 2.0.0  
 
+│   │   └── db-adapter.js            # Adapter: Traduce queries
 
----### Ver logs
+│   ├── routes/**Fecha**: 27 de octubre de 2025  ```sql
 
+│   │   ├── hotels.js                # GET /api/hotels
 
+│   │   ├── clients.js               # GET /api/clients/***Estado**: ✅ Producción Ready
 
-## 🔄 Cambiar Base de DatosEsto crea:
+│   │   ├── reservations.js          # POST /api/reservations
 
+│   │   ├── payments.js              # GET /api/payments/*SELECT * FROM generar_factura(1);  -- Reserva ID 1docker-compose up -d    └── metricas.sql    └── metricas.sql
 
+│   │   └── invoices.js              # POST /api/invoices/generate
 
-El sistema soporta **4 gestores** de bases de datos. Para cambiar:```bash
+│   ├── server.js                    # Servidor Express principal-- Retorna: item, descripcion, monto (Estadía, Servicios, Impuestos, Daños, TOTAL)
 
+│   ├── package.json                 # Dependencias
 
+│   ├── .env                         # Variables de entorno (NO en Git)``````bash
 
-### **PostgreSQL → MySQL**# PostgreSQL- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`
+│   └── .env.example                 # Template de configuración
 
+│
 
+├── frontend/                         # Frontend React
 
-#### **1. Instalar driver**docker logs postgres-hotel
+│   ├── src/#### **5. Trigger: Actualizar Estado Habitación**docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1```
 
-```bash
+│   │   ├── components/
+
+│   │   │   ├── HotelList.js         # Lista de hoteles```sql
+
+│   │   │   ├── HotelRooms.js        # Habitaciones por hotel
+
+│   │   │   ├── TopClient.js         # Cliente top-- Automático al crear reserva: Disponible → Ocupada```
+
+│   │   │   ├── ReservationForm.js   # Crear reserva
+
+│   │   │   ├── PendingPayments.js   # Pagos pendientes-- Automático al cancelar: Ocupada → Disponible
+
+│   │   │   └── InvoiceGenerator.js  # Generar factura
+
+│   │   ├── api.js                   # Cliente HTTP (axios)`````````
+
+│   │   ├── App.js                   # Componente principal
+
+│   │   └── index.js                 # Entry point
+
+│   └── package.json
+
+│---### Ver logs
+
+├── init-scripts/                     # Scripts de inicialización SQL
+
+│   ├── 01-create-tables.sql         # 6 tablas
+
+│   ├── 02-insert-data.sql           # 50 clientes, 10 hoteles, 277 habitaciones
+
+│   ├── 03-functions.sql             # 3 funciones## 🔄 Cambiar Base de DatosEsto crea:
+
+│   ├── 04-procedures.sql            # 1 procedimiento
+
+│   ├── 05-triggers.sql              # 2 triggers
+
+│   └── 06-funcionalidades-adicionales.sql  # Cursor + funciones avanzadas
+
+│El sistema soporta **4 gestores** de bases de datos. Para cambiar:```bash
+
+├── docs/                             # Documentación especializada
+
+│   ├── GUIA_MIGRACION_BASES_DATOS.md   # Cómo migrar a MySQL/SQL Server/Oracle
+
+│   ├── GUIA_MULTI_BASE_DATOS.md        # Conexiones simultáneas
+
+│   └── RESUMEN_LIMPIEZA.md             # Historial de optimización### **PostgreSQL → MySQL**# PostgreSQL- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`
+
+│
+
+├── docker-compose.yml                # Contenedores Docker
+
+├── .gitignore                        # Archivos excluidos de Git
+
+├── LICENSE                           # Licencia MIT#### **1. Instalar driver**docker logs postgres-hotel
+
+├── CONTRIBUTING.md                   # Guía de contribución
+
+└── README.md                         # Este archivo```bash
+
+```
 
 cd backend- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`
 
+---
+
 npm install mysql2
+
+## 🔌 API Endpoints
 
 ```# Oracle
 
+### Base URL: `http://localhost:3001`
 
 
-#### **2. Levantar MySQL**docker logs oracle-hotel## 🚀 Inicio Rápido## 🚀 Inicio Rápido
 
-```bash
+| Método | Endpoint | Descripción | Parámetros |
 
-docker run -d --name mysql-hotel \```
+|--------|----------|-------------|------------|#### **2. Levantar MySQL**docker logs oracle-hotel## 🚀 Inicio Rápido## 🚀 Inicio Rápido
 
-  -e MYSQL_DATABASE=hotel_db \
+| `GET` | `/` | Info del servidor | - |
 
-  -e MYSQL_USER=admin_hotel \**2. Ejecutar Benchmark de PostgreSQL**
+| `GET` | `/api/hotels` | Lista todos los hoteles | - |```bash
 
-  -e MYSQL_PASSWORD=hotel123 \
+| `GET` | `/api/hotels/:id/rooms` | Habitaciones de un hotel | `id` (path) |
+
+| `GET` | `/api/clients` | Lista todos los clientes | - |docker run -d --name mysql-hotel \```
+
+| `GET` | `/api/clients/top` | Cliente con más reservas | - |
+
+| `GET` | `/api/clients/:id` | Información de un cliente | `id` (path) |  -e MYSQL_DATABASE=hotel_db \
+
+| `POST` | `/api/reservations` | Crear nueva reserva | `body` (JSON) |
+
+| `GET` | `/api/reservations/:clientId` | Reservas de un cliente | `clientId` (path) |  -e MYSQL_USER=admin_hotel \**2. Ejecutar Benchmark de PostgreSQL**
+
+| `GET` | `/api/payments/pending` | Pagos pendientes | - |
+
+| `POST` | `/api/payments` | Registrar pago | `body` (JSON) |  -e MYSQL_PASSWORD=hotel123 \
+
+| `POST` | `/api/invoices/generate` | Generar factura | `body` (JSON) |
 
   -p 3306:3306 mysql:8.0### Ver estadísticas en tiempo real
 
-```
-
-
-
-#### **3. Editar `.env`**
-
-```bash```bash
-
-DB_TYPE=mysql
-
-DB_PORT=3306docker stats postgres-hotel oracle-hotel```bash
+### Ejemplos de Uso
 
 ```
 
+#### 1. Obtener todos los hoteles
+
+```bash
+
+curl http://localhost:3001/api/hotels
+
+```#### **3. Editar `.env`**
+
+
+
+**Respuesta:**```bash```bash
+
+```json
+
+[DB_TYPE=mysql
+
+  {
+
+    "id": 1,DB_PORT=3306docker stats postgres-hotel oracle-hotel```bash
+
+    "nombre": "Hotel Plaza",
+
+    "direccion": "Calle Principal 123",```
+
+    "ciudad": "Ciudad de México",
+
+    "estrellas": 5,```
+
+    "total_habitaciones": 28
+
+  },#### **4. Reiniciar backend**
+
+  ...
+
+]```bashpython3 benchmark.py### 1. Levantar Bases de Datos### 1. Levantar Bases de Datos
+
 ```
-
-#### **4. Reiniciar backend**
-
-```bashpython3 benchmark.py### 1. Levantar Bases de Datos### 1. Levantar Bases de Datos
 
 npm restart
 
-```### Reiniciar contenedores
+#### 2. Obtener habitaciones de un hotel
 
-
-
-**Consulta `GUIA_MIGRACION_BASES_DATOS.md` para conversión completa de scripts SQL.**```
-
-
-
----```bash
-
-
-
-## ⚙️ Configuracióndocker-compose restart
-
-
-
-### **Variables de Entorno** (`.env`)```
-
-
-
-```bashEsto:
-
-# Tipo de base de datos
-
-DB_TYPE=postgresql  # postgresql | mysql | mssql | oracle### Detener todo
-
-
-
-# Conexión- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)```bash```bash
-
-DB_HOST=localhost
-
-DB_PORT=5432        # 5432 PostgreSQL, 3306 MySQL, 1433 SQL Server, 1521 Oracle```bash
-
-DB_NAME=hotel_db
-
-DB_USER=admin_hoteldocker-compose down- Ejecuta 5 queries de prueba
-
-DB_PASSWORD=hotel123
-
-```
-
-# Servidor
-
-PORT=3001- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)docker-compose up -ddocker-compose up -d
-
-```
-
-## 📈 Resultados del Benchmark
-
----
-
-
-
-## 🧪 Testing
-
-**PostgreSQL ganó en todas las categorías:**
-
-### **Probar API**
-
-**Tiempo estimado**: ~15 segundos para todo el proceso``````
-
-```bash
-
-# Verificar servidor| Métrica | PostgreSQL | Oracle |
-
-curl http://localhost:3001/
-
-|---------|------------|--------|
-
-# Listar hoteles
-
-curl http://localhost:3001/api/hotels| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |
-
-
-
-# Habitaciones disponibles| Tiempo total queries | 352 ms | 476 ms (estimado) |## 📊 Esquema de la Base de Datos
+```bash```### Reiniciar contenedores
 
 curl http://localhost:3001/api/hotels/1/rooms
 
-| Uso de memoria | 186 MB | 2,213 MB |
-
-# Cliente más recurrente
-
-curl http://localhost:3001/api/clients/top/1| CPU | 0.04% | 3.41% |
-
-
-
-# Pagos pendientes| Cache hit ratio | 99.99% | 98.50% |
-
-curl http://localhost:3001/api/payments/pending
-
-### Tablas PrincipalesEsto crea:Esto crea:
-
-# Factura
-
-curl http://localhost:3001/api/invoices/1**Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.
-
 ```
 
 
 
----
+**Respuesta:****Consulta `GUIA_MIGRACION_BASES_DATOS.md` para conversión completa de scripts SQL.**```
 
-## 🐍 Dependencias Python
+```json
 
-## 📊 Datos de Prueba
+[
 
-1. **CLIENTE** - Información de clientes- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`
+  {
 
-El sistema incluye datos de prueba:
+    "id": 1,---```bash
 
-- **50 clientes** bolivianos```bash
+    "numero": "101",
 
-- **10 hoteles** en diferentes ciudades
+    "tipo": "Suite",
 
-- **277 habitaciones** (Simple, Doble, Suite)pip3 install psycopg2-binary2. **HOTEL** - Datos de hoteles
+    "precio": 2500.00,
 
-- **64 reservas** con estados variados
+    "disponible": true## ⚙️ Configuracióndocker-compose restart
 
-- **Precios**: Bs. 120 - Bs. 350 por noche```
+  },
 
+  ...
 
+]
 
----3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`
-
-
-
-## 🎯 Características Principales## 📝 Notas Técnicas
+```### **Variables de Entorno** (`.env`)```
 
 
 
-### **Frontend**4. **RESERVA** - Reservaciones de habitaciones
-
-- ✅ Lista de hoteles con estadísticas
-
-- ✅ Búsqueda de habitaciones por hotel- **PostgreSQL** usa `generate_series()` para inserciones ultra-rápidas (122K registros/segundo)
-
-- ✅ Cliente más recurrente por hotel
-
-- ✅ Creación de reservas con auto-cliente- El schema usa llaves compuestas para simular escenarios reales complejos5. **REGISTRO** - Check-in/check-out
-
-- ✅ **Tabla dinámica de habitaciones** (nueva feature)
-
-- ✅ **Filtro de pagos por hotel** (nueva feature)- TRUNCATE CASCADE es usado para limpieza rápida de datos
-
-- ✅ Generación de facturas detalladas
-
-- Todo el código SQL está embebido en `benchmark.py` - no se requieren archivos externos6. **DESTROZO** - Daños reportados
-
-### **Backend**
-
-- ✅ Arquitectura multi-base de datos
-
-- ✅ Adaptador universal de queries
-
-- ✅ Transacciones con rollback## ⚠️ Problemas Conocidos### 2. Ejecutar Benchmark de PostgreSQL### 2. Ejecutar Benchmark de PostgreSQL
-
-- ✅ Funciones SQL reutilizables
-
-- ✅ Procedimientos con parámetros OUT
-
-- ✅ Cursores explícitos para reportes
-
-1. **Oracle Timeout**: Oracle Free puede colgarse al generar >1M registros### Relaciones Clave
-
-### **Base de Datos**
-
-- ✅ 6 tablas relacionadas2. **Conexiones bloqueadas**: Si PostgreSQL se bloquea, usar:
-
-- ✅ 3 funciones PL/pgSQL
-
-- ✅ 1 procedimiento almacenado   ```sql
-
-- ✅ 2 triggers automáticos
-
-- ✅ Foreign keys con CASCADE   SELECT pg_terminate_backend(pid) FROM pg_stat_activity 
-
-- ✅ Índices optimizados
-
-   WHERE state = 'active' AND pid <> pg_backend_pid();- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`
-
----
-
-   ```
-
-## 🐳 Docker
-
-- `RESERVA` referencia a `HABITACION` usando ambas columnas```bash```bash
-
-### **Comandos Útiles**
-
-## 📄 Licencia
+#### 3. Crear una reserva
 
 ```bash
 
-# Levantar PostgreSQL- `REGISTRO` referencia a `RESERVA` y `HABITACION`
+curl -X POST http://localhost:3001/api/reservations \```bashEsto:
 
-docker-compose up -d postgres
+  -H "Content-Type: application/json" \
 
-Proyecto educativo - Uso libre
+  -d '{# Tipo de base de datos
 
-# Ver logs
+    "cliente_id": 1,
 
-docker logs postgres-hotel- `DESTROZO` referencia a `REGISTRO`python3 benchmark.pypython3 benchmark.py
+    "habitacion_id": 5,DB_TYPE=postgresql  # postgresql | mysql | mssql | oracle### Detener todo
+
+    "fecha_inicio": "2025-11-01",
+
+    "fecha_fin": "2025-11-05",
+
+    "numero_huespedes": 2
+
+  }'# Conexión- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)```bash```bash
+
+```
+
+DB_HOST=localhost
+
+**Respuesta:**
+
+```jsonDB_PORT=5432        # 5432 PostgreSQL, 3306 MySQL, 1433 SQL Server, 1521 Oracle```bash
+
+{
+
+  "message": "Reserva creada exitosamente",DB_NAME=hotel_db
+
+  "reservationId": 42,
+
+  "total": 10000.00DB_USER=admin_hoteldocker-compose down- Ejecuta 5 queries de prueba
+
+}
+
+```DB_PASSWORD=hotel123
 
 
 
-# Conectar a psql
+#### 4. Cliente con más reservas (usando función SQL)```
 
-docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
+```bash
 
-## 🔧 Comandos Útiles``````
+curl http://localhost:3001/api/clients/top# Servidor
 
-# Detener
+```
 
-docker-compose down
+PORT=3001- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)docker-compose up -ddocker-compose up -d
+
+**Respuesta:**
+
+```json```
+
+{
+
+  "id": 15,## 📈 Resultados del Benchmark
+
+  "nombre": "María García",
+
+  "email": "maria@example.com",---
+
+  "total_reservas": 8,
+
+  "gasto_total": 45000.00
+
+}
+
+```## 🧪 Testing
 
 
 
-# Eliminar datos (reset completo)### Conectar a PostgreSQL
+#### 5. Pagos pendientes**PostgreSQL ganó en todas las categorías:**
 
-docker-compose down -v
+```bash
+
+curl http://localhost:3001/api/payments/pending### **Probar API**
+
+```
+
+**Tiempo estimado**: ~15 segundos para todo el proceso``````
+
+**Respuesta:**
+
+```json```bash
+
+[
+
+  {# Verificar servidor| Métrica | PostgreSQL | Oracle |
+
+    "reserva_id": 23,
+
+    "cliente": "Juan Pérez",curl http://localhost:3001/
+
+    "hotel": "Hotel Plaza",
+
+    "monto_pendiente": 5000.00,|---------|------------|--------|
+
+    "dias_vencido": 3
+
+  },# Listar hoteles
+
+  ...
+
+]curl http://localhost:3001/api/hotels| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |
 
 ```
 
 
-
----```bashEsto:Esto:
-
-
-
-## 📚 Documentación Adicionaldocker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
-
-
-
-| Archivo | Descripción |```- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)
-
-|---------|-------------|
-
-| `GUIA_MIGRACION_BASES_DATOS.md` | Guía completa para migrar a MySQL, SQL Server u Oracle |
-
-| `GUIA_MULTI_BASE_DATOS.md` | Opciones de conexión simultánea a múltiples BDs |
-
-### Conectar a Oracle- Ejecuta 5 queries de prueba- Ejecuta 5 queries de prueba
 
 ---
 
+# Habitaciones disponibles| Tiempo total queries | 352 ms | 476 ms (estimado) |## 📊 Esquema de la Base de Datos
+
+## 🎯 Funcionalidades SQL Avanzadas
+
+curl http://localhost:3001/api/hotels/1/rooms
+
+El sistema incluye funciones, procedimientos, triggers y cursores en PostgreSQL:
+
+| Uso de memoria | 186 MB | 2,213 MB |
+
+### 1. **Función**: Obtener cliente top
+
+```sql# Cliente más recurrente
+
+SELECT * FROM obtener_cliente_top();
+
+-- Retorna el cliente con más reservascurl http://localhost:3001/api/clients/top/1| CPU | 0.04% | 3.41% |
+
+```
 
 
-## 🔧 Troubleshooting
 
-```bash- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)
+### 2. **Función**: Calcular total de reserva
 
-### **Error: Port 5432 already in use**
+```sql# Pagos pendientes| Cache hit ratio | 99.99% | 98.50% |
 
-```bashdocker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1
+SELECT calcular_total_reserva(42);
 
-# Detener PostgreSQL local
+-- Retorna el costo total de la reserva #42curl http://localhost:3001/api/payments/pending
 
-sudo service postgresql stop```
+```
+
+### Tablas PrincipalesEsto crea:Esto crea:
+
+### 3. **Función**: Habitaciones disponibles
+
+```sql# Factura
+
+SELECT obtener_habitaciones_disponibles(1, '2025-11-01', '2025-11-05');
+
+-- Retorna habitaciones disponibles del hotel #1 en esas fechascurl http://localhost:3001/api/invoices/1**Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.
+
+```
+
+```
+
+### 4. **Procedimiento**: Procesar pagos pendientes
+
+```sql
+
+CALL procesar_pagos_pendientes();
+
+-- Actualiza el estado de pagos vencidos---
+
+```
+
+## 🐍 Dependencias Python
+
+### 5. **Trigger**: Actualizar disponibilidad de habitación
+
+```sql## 📊 Datos de Prueba
+
+-- Se ejecuta automáticamente al crear una reserva
+
+-- Marca la habitación como no disponible1. **CLIENTE** - Información de clientes- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`- **PostgreSQL**: `localhost:5432` - Usuario: `admin_hotel` / Password: `hotel123`
+
+```
+
+El sistema incluye datos de prueba:
+
+### 6. **Trigger**: Validar fechas de reserva
+
+```sql- **50 clientes** bolivianos```bash
+
+-- Se ejecuta antes de insertar una reserva
+
+-- Valida que fecha_fin > fecha_inicio- **10 hoteles** en diferentes ciudades
+
+```
+
+- **277 habitaciones** (Simple, Doble, Suite)pip3 install psycopg2-binary2. **HOTEL** - Datos de hoteles
+
+### 7. **Cursor**: Generar reporte de hoteles
+
+```sql- **64 reservas** con estados variados
+
+-- Itera sobre todos los hoteles y calcula estadísticas
+
+SELECT * FROM generar_reporte_hoteles();- **Precios**: Bs. 120 - Bs. 350 por noche```
+
+```
 
 
 
-# O cambiar puerto en docker-compose.yml
+---
 
-ports:
+---3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`- **Oracle 23c Free**: `localhost:1521` - Usuario: `hotel_user` / Password: `hotel123`
+
+## 🔄 Cambiar Base de Datos
+
+
+
+El sistema soporta 4 gestores de bases de datos. Cambiar es muy simple:
+
+## 🎯 Características Principales## 📝 Notas Técnicas
+
+### PostgreSQL → MySQL
+
+
+
+#### 1️⃣ Instalar driver
+
+```bash### **Frontend**4. **RESERVA** - Reservaciones de habitaciones
+
+cd backend
+
+npm install mysql2- ✅ Lista de hoteles con estadísticas
+
+```
+
+- ✅ Búsqueda de habitaciones por hotel- **PostgreSQL** usa `generate_series()` para inserciones ultra-rápidas (122K registros/segundo)
+
+#### 2️⃣ Modificar `.env`
+
+```properties- ✅ Cliente más recurrente por hotel
+
+DB_TYPE=mysql
+
+DB_PORT=3306- ✅ Creación de reservas con auto-cliente- El schema usa llaves compuestas para simular escenarios reales complejos5. **REGISTRO** - Check-in/check-out
+
+DB_NAME=hotel_db
+
+DB_USER=root- ✅ **Tabla dinámica de habitaciones** (nueva feature)
+
+DB_PASSWORD=mysql123
+
+```- ✅ **Filtro de pagos por hotel** (nueva feature)- TRUNCATE CASCADE es usado para limpieza rápida de datos
+
+
+
+#### 3️⃣ Crear base de datos MySQL- ✅ Generación de facturas detalladas
+
+```bash
+
+docker-compose up -d mysql- Todo el código SQL está embebido en `benchmark.py` - no se requieren archivos externos6. **DESTROZO** - Daños reportados
+
+
+
+# Convertir scripts SQL (sintaxis ligeramente diferente)### **Backend**
+
+# Ver docs/GUIA_MIGRACION_BASES_DATOS.md
+
+```- ✅ Arquitectura multi-base de datos
+
+
+
+#### 4️⃣ Reiniciar backend- ✅ Adaptador universal de queries
+
+```bash
+
+npm start- ✅ Transacciones con rollback## ⚠️ Problemas Conocidos### 2. Ejecutar Benchmark de PostgreSQL### 2. Ejecutar Benchmark de PostgreSQL
+
+```
+
+- ✅ Funciones SQL reutilizables
+
+✅ ¡Listo! Ahora estás usando MySQL sin cambiar ni una línea de código.
+
+- ✅ Procedimientos con parámetros OUT
+
+### PostgreSQL → SQL Server
+
+- ✅ Cursores explícitos para reportes
+
+#### 1️⃣ Instalar driver
+
+```bash1. **Oracle Timeout**: Oracle Free puede colgarse al generar >1M registros### Relaciones Clave
+
+npm install mssql
+
+```### **Base de Datos**
+
+
+
+#### 2️⃣ Modificar `.env`- ✅ 6 tablas relacionadas2. **Conexiones bloqueadas**: Si PostgreSQL se bloquea, usar:
+
+```properties
+
+DB_TYPE=mssql- ✅ 3 funciones PL/pgSQL
+
+DB_PORT=1433
+
+DB_NAME=hotel_db- ✅ 1 procedimiento almacenado   ```sql
+
+DB_USER=sa
+
+DB_PASSWORD=YourStrong!Passw0rd- ✅ 2 triggers automáticos
+
+```
+
+- ✅ Foreign keys con CASCADE   SELECT pg_terminate_backend(pid) FROM pg_stat_activity 
+
+#### 3️⃣ Reiniciar
+
+```bash- ✅ Índices optimizados
+
+npm start
+
+```   WHERE state = 'active' AND pid <> pg_backend_pid();- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`
+
+
+
+### PostgreSQL → Oracle---
+
+
+
+#### 1️⃣ Instalar driver   ```
+
+```bash
+
+npm install oracledb## 🐳 Docker
+
+```
+
+- `RESERVA` referencia a `HABITACION` usando ambas columnas```bash```bash
+
+#### 2️⃣ Modificar `.env`
+
+```properties### **Comandos Útiles**
+
+DB_TYPE=oracle
+
+DB_PORT=1521## 📄 Licencia
+
+DB_NAME=XEPDB1
+
+DB_USER=system```bash
+
+DB_PASSWORD=oracle123
+
+```# Levantar PostgreSQL- `REGISTRO` referencia a `RESERVA` y `HABITACION`
+
+
+
+#### 3️⃣ Reiniciardocker-compose up -d postgres
+
+```bash
+
+npm startProyecto educativo - Uso libre
+
+```
+
+# Ver logs
+
+**Nota**: El adaptador traduce automáticamente:
+
+- PostgreSQL: `SELECT * FROM hoteles WHERE id = $1`docker logs postgres-hotel- `DESTROZO` referencia a `REGISTRO`python3 benchmark.pypython3 benchmark.py
+
+- MySQL: `SELECT * FROM hoteles WHERE id = ?`
+
+- SQL Server: `SELECT * FROM hoteles WHERE id = @p1`
+
+- Oracle: `SELECT * FROM hoteles WHERE id = :1`
+
+# Conectar a psql
+
+---
+
+docker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
+
+## 🧪 Testing
+
+## 🔧 Comandos Útiles``````
+
+### Probar Backend
+
+# Detener
+
+```bash
+
+cd backenddocker-compose down
+
+
+
+# Verificar servidor
+
+curl http://localhost:3001/
+
+# Eliminar datos (reset completo)### Conectar a PostgreSQL
+
+# Probar todos los endpoints
+
+curl http://localhost:3001/api/hotelsdocker-compose down -v
+
+curl http://localhost:3001/api/hotels/1/rooms
+
+curl http://localhost:3001/api/clients```
+
+curl http://localhost:3001/api/clients/top
+
+curl http://localhost:3001/api/payments/pending
+
+
+
+# Crear reserva de prueba---```bashEsto:Esto:
+
+curl -X POST http://localhost:3001/api/reservations \
+
+  -H "Content-Type: application/json" \
+
+  -d '{
+
+    "cliente_id": 1,## 📚 Documentación Adicionaldocker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
+
+    "habitacion_id": 5,
+
+    "fecha_inicio": "2025-12-01",
+
+    "fecha_fin": "2025-12-05",
+
+    "numero_huespedes": 2| Archivo | Descripción |```- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)- Genera 1.4 millones de registros (100K clientes, 1K hoteles, 50K habitaciones, 500K reservas, 500K registros, 250K destrozos)
+
+  }'
+
+```|---------|-------------|
+
+
+
+### Probar Frontend| `GUIA_MIGRACION_BASES_DATOS.md` | Guía completa para migrar a MySQL, SQL Server u Oracle |
+
+
+
+```bash| `GUIA_MULTI_BASE_DATOS.md` | Opciones de conexión simultánea a múltiples BDs |
+
+cd frontend
+
+### Conectar a Oracle- Ejecuta 5 queries de prueba- Ejecuta 5 queries de prueba
+
+# Iniciar en modo desarrollo
+
+npm start---
+
+
+
+# Abrir en navegador:
+
+# http://localhost:3000
+
+```## 🔧 Troubleshooting
+
+
+
+### Probar Base de Datos```bash- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)- Muestra métricas de rendimiento (tiempo, CPU, memoria, cache)
+
+
+
+```bash### **Error: Port 5432 already in use**
+
+# Conectar a PostgreSQL
+
+psql -U admin_hotel -h localhost -d hotel_db```bashdocker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1
+
+
+
+# Queries de prueba# Detener PostgreSQL local
+
+SELECT COUNT(*) FROM hoteles;          -- Debe retornar 10
+
+SELECT COUNT(*) FROM clientes;         -- Debe retornar 50sudo service postgresql stop```
+
+SELECT COUNT(*) FROM habitaciones;     -- Debe retornar 277
+
+
+
+# Probar función
+
+SELECT * FROM obtener_cliente_top();# O cambiar puerto en docker-compose.yml
+
+
+
+# Probar procedimientoports:
+
+CALL procesar_pagos_pendientes();
 
   - "5433:5432"### Ver logs**Tiempo estimado**: ~15 segundos para todo el proceso**Tiempo estimado**: ~15 segundos para todo el proceso
 
+# Salir
+
+\q```
+
 ```
 
 
+
+---
 
 ### **Error: Cannot connect to database**
 
+## 📊 Datos de Prueba
+
 ```bash```bash
+
+El sistema incluye datos de prueba realistas:
 
 # Verificar que el contenedor está corriendo
 
-docker ps | grep postgres# PostgreSQL
+| Tabla | Registros | Descripción |
+
+|-------|-----------|-------------|docker ps | grep postgres# PostgreSQL
+
+| `hoteles` | 10 | Hoteles de 1 a 5 estrellas |
+
+| `habitaciones` | 277 | Tipos: Simple, Doble, Suite (15-28 por hotel) |
+
+| `clientes` | 50 | Nombres, emails, teléfonos |
+
+| `reservas` | ~100 | Reservas activas y pasadas |# Ver logsdocker logs postgres-hotel## 📊 Esquema de la Base de Datos## 📊 Esquema de la Base de Datos
+
+| `pagos` | ~150 | Pagos completados y pendientes |
+
+| `facturas` | ~80 | Facturas generadas |docker logs postgres-hotel
 
 
 
-# Ver logsdocker logs postgres-hotel## 📊 Esquema de la Base de Datos## 📊 Esquema de la Base de Datos
-
-docker logs postgres-hotel
+### Ejemplos de Hoteles
 
 
 
-# Reiniciar contenedor
+- **Hotel Plaza** (5⭐) - Ciudad de México - 28 habitaciones# Reiniciar contenedor
 
-docker restart postgres-hotel# Oracle
+- **Hotel Ejecutivo** (4⭐) - Monterrey - 24 habitaciones
+
+- **Hotel Express** (3⭐) - Guadalajara - 20 habitacionesdocker restart postgres-hotel# Oracle
+
+
+
+### Cliente de Ejemplo```
+
+
+
+```sqldocker logs oracle-hotel
+
+-- Cliente ID: 1
+
+nombre: 'Juan Pérez'### **Error: Frontend no conecta con backend**
+
+email: 'juan.perez@example.com'
+
+telefono: '+52 55 1234 5678'```bash```### Tablas Principales### Tablas Principales
 
 ```
 
-docker logs oracle-hotel
-
-### **Error: Frontend no conecta con backend**
-
-```bash```### Tablas Principales### Tablas Principales
-
 # Verificar que backend está corriendo
+
+---
+
+curl http://localhost:3001/
+
+## 📚 Documentación
+
+
+
+### Guías Especializadas
+
+# Revisar CORS en backend/server.js### Ver estadísticas en tiempo real
+
+- 📖 **[GUIA_MIGRACION_BASES_DATOS.md](docs/GUIA_MIGRACION_BASES_DATOS.md)**
+
+  - Migración a MySQL# Verificar puerto en frontend/src/api.js
+
+  - Migración a SQL Server
+
+  - Migración a Oracle```
+
+  - Diferencias de sintaxis SQL
+
+
+
+- 📖 **[GUIA_MULTI_BASE_DATOS.md](docs/GUIA_MULTI_BASE_DATOS.md)**
+
+  - Conexiones simultáneas---```bash1. **CLIENTE** - Información de clientes1. **CLIENTE** - Información de clientes
+
+  - Dual pool configuration
+
+  - Selector de BD por endpoint
+
+
+
+- 📖 **[RESUMEN_LIMPIEZA.md](docs/RESUMEN_LIMPIEZA.md)**## 🎓 Arquitecturadocker stats postgres-hotel oracle-hotel
+
+  - Historial de optimización
+
+  - Archivos eliminados
+
+  - Estadísticas del proyecto
+
+### **Flujo de Datos**```2. **HOTEL** - Datos de hoteles2. **HOTEL** - Datos de hoteles
+
+### Documentación del Código
+
+
+
+```javascript
+
+// Cada función está documentada con JSDoc```
+
+/**
+
+ * Ejecuta una query adaptada al gestor de BD actualReact Frontend (3000)
+
+ * @param {Object} pool - Connection pool
+
+ * @param {string} query - Query SQL con placeholders PostgreSQL ($1, $2...)    ↓ HTTP Request### Reiniciar contenedores3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)
+
+ * @param {Array} params - Parámetros de la query
+
+ * @returns {Promise<Array>} Resultados normalizadosExpress API (3001)
+
+ */
+
+async function executeQuery(pool, query, params) {    ↓ executeQuery()
+
+  // ...
+
+}DB Adapter
+
+```
+
+    ↓ Convierte $1 → ? | @p1 | :1```bash4. **RESERVA** - Reservaciones de habitaciones4. **RESERVA** - Reservaciones de habitaciones
+
+---
+
+DB Multi
+
+## 🤝 Contribuir
+
+    ↓ getPool()docker-compose restart
+
+¡Las contribuciones son bienvenidas! Lee la [Guía de Contribución](CONTRIBUTING.md) para empezar.
+
+PostgreSQL | MySQL | SQL Server | Oracle
+
+### Proceso Rápido
+
+``````5. **REGISTRO** - Check-in/check-out5. **REGISTRO** - Check-in/check-out
+
+1. **Fork** el repositorio
+
+2. **Crea** una rama (`git checkout -b feature/amazing-feature`)
+
+3. **Commit** tus cambios (`git commit -m 'feat: add amazing feature'`)
+
+4. **Push** a la rama (`git push origin feature/amazing-feature`)### **Adaptador Universal**
+
+5. **Abre** un Pull Request
+
+
+
+### Áreas que Necesitan Ayuda
+
+El adaptador traduce automáticamente:### Detener todo6. **DESTROZO** - Daños reportados6. **DESTROZO** - Daños reportados
+
+- ✅ Tests unitarios (aumentar cobertura)
+
+- 📝 Documentación (más ejemplos)- `$1, $2, $3` → PostgreSQL
+
+- 🎨 UI/UX (mejorar interfaz)
+
+- 🚀 Performance (optimizar queries)- `?, ?, ?` → MySQL
+
+- 🌍 Internacionalización (agregar idiomas)
+
+- `@p1, @p2, @p3` → SQL Server
+
+---
+
+- `:1, :2, :3` → Oracle```bash
+
+## 🐛 Troubleshooting
+
+
+
+### Error: "Cannot connect to database"
+
+**Resultado**: Escribes código una vez, funciona en 4 gestores.docker-compose down
+
+**Solución:**
+
+```bash
+
+# Verificar que el contenedor esté corriendo
+
+docker ps | grep postgres---```### Relaciones Clave### Relaciones Clave
+
+
+
+# Verificar credenciales en .env
+
+cat backend/.env
+
+**Versión**: 2.0.0  
+
+# Reintentar conexión
+
+cd backend && npm start**Última actualización**: 27 de octubre de 2025  
+
+```
+
+**Estado**: ✅ Producción Ready## 📈 Resultados del Benchmark
+
+### Error: "Port 3001 already in use"
+
+
+
+**Solución:**
+
+```bash
+
+# Encontrar proceso usando el puerto**PostgreSQL ganó en todas las categorías:**- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`
+
+lsof -i :3001
+
+
+
+# Matar proceso
+
+kill -9 <PID>| Métrica | PostgreSQL | Oracle |- `RESERVA` referencia a `HABITACION` usando ambas columnas- `RESERVA` referencia a `HABITACION` usando ambas columnas
+
+
+
+# O cambiar puerto en .env|---------|------------|--------|
+
+PORT=3002
+
+```| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |- `REGISTRO` referencia a `RESERVA` y `HABITACION`- `REGISTRO` referencia a `RESERVA` y `HABITACION`
+
+
+
+### Error: "relation 'hoteles' does not exist"| Tiempo total queries | 352 ms | 476 ms (estimado) |
+
+
+
+**Solución:**| Uso de memoria | 186 MB | 2,213 MB |- `DESTROZO` referencia a `REGISTRO`- `DESTROZO` referencia a `REGISTRO`
+
+```bash
+
+# Ejecutar scripts de inicialización| CPU | 0.04% | 3.41% |
+
+cd proyecto-hotel
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/01-create-tables.sql| Cache hit ratio | 99.99% | 98.50% |
+
+psql -U admin_hotel -h localhost -d hotel_db -f init-scripts/02-insert-data.sql
+
+```
+
+
+
+### Frontend no se conecta al backend**Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.## 🔧 Comandos Útiles## 🔧 Comandos Útiles
+
+
+
+**Solución:**
+
+```bash
+
+# Verificar que backend esté corriendo## 🐍 Dependencias Python
 
 curl http://localhost:3001/
 
 
 
-# Revisar CORS en backend/server.js### Ver estadísticas en tiempo real
+# Verificar CORS en server.js
 
-# Verificar puerto en frontend/src/api.js
+# Debe incluir: app.use(cors());```bash### Conectar a PostgreSQL### Conectar a PostgreSQL
+
+
+
+# Verificar URL en frontend/src/api.jspip3 install psycopg2-binary
+
+# Debe ser: baseURL: 'http://localhost:3001'
+
+``````
+
+
+
+### Error al instalar `oracledb`
+
+
+
+**Solución:**## 📝 Notas Técnicas```bash```bash
+
+```bash
+
+# Oracle requiere cliente nativo
+
+# Instalar Oracle Instant Client
+
+# Ver: https://oracle.github.io/node-oracledb/INSTALL.html- **PostgreSQL** usa `generate_series()` para inserciones ultra-rápidas (122K registros/segundo)docker exec -it postgres-hotel psql -U admin_hotel -d hotel_dbdocker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
+
+
+
+# O usar solo PostgreSQL/MySQL que no requieren librerías nativas- **Oracle** usa `FORALL` bulk inserts pero es considerablemente más lento
 
 ```
-
-
-
----```bash1. **CLIENTE** - Información de clientes1. **CLIENTE** - Información de clientes
-
-
-
-## 🎓 Arquitecturadocker stats postgres-hotel oracle-hotel
-
-
-
-### **Flujo de Datos**```2. **HOTEL** - Datos de hoteles2. **HOTEL** - Datos de hoteles
-
-
-
-```
-
-React Frontend (3000)
-
-    ↓ HTTP Request### Reiniciar contenedores3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)3. **HABITACION** - Habitaciones por hotel (PK compuesta: id_hotel, id_habitacion)
-
-Express API (3001)
-
-    ↓ executeQuery()
-
-DB Adapter
-
-    ↓ Convierte $1 → ? | @p1 | :1```bash4. **RESERVA** - Reservaciones de habitaciones4. **RESERVA** - Reservaciones de habitaciones
-
-DB Multi
-
-    ↓ getPool()docker-compose restart
-
-PostgreSQL | MySQL | SQL Server | Oracle
-
-``````5. **REGISTRO** - Check-in/check-out5. **REGISTRO** - Check-in/check-out
-
-
-
-### **Adaptador Universal**
-
-
-
-El adaptador traduce automáticamente:### Detener todo6. **DESTROZO** - Daños reportados6. **DESTROZO** - Daños reportados
-
-- `$1, $2, $3` → PostgreSQL
-
-- `?, ?, ?` → MySQL
-
-- `@p1, @p2, @p3` → SQL Server
-
-- `:1, :2, :3` → Oracle```bash
-
-
-
-**Resultado**: Escribes código una vez, funciona en 4 gestores.docker-compose down
-
-
-
----```### Relaciones Clave### Relaciones Clave
-
-
-
-**Versión**: 2.0.0  
-
-**Última actualización**: 27 de octubre de 2025  
-
-**Estado**: ✅ Producción Ready## 📈 Resultados del Benchmark
-
-
-
-
-**PostgreSQL ganó en todas las categorías:**- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`- `HABITACION` tiene PK compuesta: `(id_hotel, id_habitacion)`
-
-
-
-| Métrica | PostgreSQL | Oracle |- `RESERVA` referencia a `HABITACION` usando ambas columnas- `RESERVA` referencia a `HABITACION` usando ambas columnas
-
-|---------|------------|--------|
-
-| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |- `REGISTRO` referencia a `RESERVA` y `HABITACION`- `REGISTRO` referencia a `RESERVA` y `HABITACION`
-
-| Tiempo total queries | 352 ms | 476 ms (estimado) |
-
-| Uso de memoria | 186 MB | 2,213 MB |- `DESTROZO` referencia a `REGISTRO`- `DESTROZO` referencia a `REGISTRO`
-
-| CPU | 0.04% | 3.41% |
-
-| Cache hit ratio | 99.99% | 98.50% |
-
-
-
-**Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.## 🔧 Comandos Útiles## 🔧 Comandos Útiles
-
-
-
-## 🐍 Dependencias Python
-
-
-
-```bash### Conectar a PostgreSQL### Conectar a PostgreSQL
-
-pip3 install psycopg2-binary
-
-```
-
-
-
-## 📝 Notas Técnicas```bash```bash
-
-
-
-- **PostgreSQL** usa `generate_series()` para inserciones ultra-rápidas (122K registros/segundo)docker exec -it postgres-hotel psql -U admin_hotel -d hotel_dbdocker exec -it postgres-hotel psql -U admin_hotel -d hotel_db
-
-- **Oracle** usa `FORALL` bulk inserts pero es considerablemente más lento
 
 - El schema usa llaves compuestas para simular escenarios reales complejos``````
 
+---
+
 - TRUNCATE CASCADE es usado para limpieza rápida de datos
 
+## 📊 Comandos Docker
 
 
-## ⚠️ Problemas Conocidos
+
+```bash
+
+# Levantar PostgreSQL## ⚠️ Problemas Conocidos
+
+docker-compose up -d postgres
 
 ### Conectar a Oracle### Conectar a Oracle
 
-1. **Oracle Timeout**: Oracle Free puede colgarse al generar >1M registros
+# Ver logs
 
-2. **Conexiones bloqueadas**: Si PostgreSQL se bloquea, usar:
+docker-compose logs -f postgres1. **Oracle Timeout**: Oracle Free puede colgarse al generar >1M registros
+
+
+
+# Detener2. **Conexiones bloqueadas**: Si PostgreSQL se bloquea, usar:
+
+docker-compose down
 
    ```sql
 
-   SELECT pg_terminate_backend(pid) FROM pg_stat_activity ```bash```bash
+# Reiniciar con datos limpios
+
+docker-compose down -v   SELECT pg_terminate_backend(pid) FROM pg_stat_activity ```bash```bash
+
+docker-compose up -d postgres
 
    WHERE state = 'active' AND pid <> pg_backend_pid();
 
-   ```docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1
+# Conectar al contenedor
+
+docker exec -it proyecto-hotel-postgres-1 bash   ```docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1docker exec -it oracle-hotel sqlplus hotel_user/hotel123@FREEPDB1
 
 
 
-## 📄 Licencia``````
+# Ejecutar psql dentro del contenedor
+
+docker exec -it proyecto-hotel-postgres-1 psql -U admin_hotel -d hotel_db
+
+```## 📄 Licencia``````
 
 
 
-Proyecto educativo - Uso libre
+---
 
+
+
+## 📄 LicenciaProyecto educativo - Uso libre
+
+
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ### Ver logs### Ver logs
 
+```
+
+MIT License
 
 
-```bash```bash
 
-# PostgreSQL# PostgreSQL
-
-docker logs postgres-hoteldocker logs postgres-hotel
+Copyright (c) 2025 Jose Zavala```bash```bash
 
 
+
+Se concede permiso gratuito a cualquier persona que obtenga una copia# PostgreSQL# PostgreSQL
+
+de este software para usar, copiar, modificar, fusionar, publicar,
+
+distribuir, sublicenciar y/o vender copias del Software...docker logs postgres-hoteldocker logs postgres-hotel
+
+```
+
+
+
+---
 
 # Oracle# Oracle
 
+## 👨‍💻 Autor
+
 docker logs oracle-hoteldocker logs oracle-hotel
 
-``````
+**Jose Zavala**
+
+- GitHub: [@Jazavala1992](https://github.com/Jazavala1992)``````
+
+- Proyecto: [Proyecto_hotel](https://github.com/Jazavala1992/Proyecto_hotel)
 
 
+
+---
 
 ### Reiniciar contenedores### Reiniciar contenedores
 
-
-
-```bash```bash
-
-docker-compose restartdocker-compose restart
-
-``````
+## 🙏 Agradecimientos
 
 
 
-### Detener todo### Detener todo
+- Node.js y Express por el excelente framework backend
+
+- React por la librería de UI```bash```bash
+
+- PostgreSQL por el robusto gestor de BD
+
+- Comunidad open source por el soportedocker-compose restartdocker-compose restart
 
 
 
-```bash```bash
-
-docker-compose downdocker-compose down
-
-``````
+---``````
 
 
 
-## 📈 Resultados del Benchmark## 📈 Resultados del Benchmark
+## 📈 Roadmap
 
 
 
-**PostgreSQL ganó en todas las categorías:****PostgreSQL ganó en todas las categorías:**
+### v2.1.0 (Próxima versión)### Detener todo### Detener todo
+
+- [ ] Tests unitarios con Jest
+
+- [ ] Tests de integración
+
+- [ ] CI/CD con GitHub Actions
+
+- [ ] Deploy a producción (Heroku/Railway)```bash```bash
 
 
 
-| Métrica | PostgreSQL | Oracle || Métrica | PostgreSQL | Oracle |
+### v2.2.0docker-compose downdocker-compose down
 
-|---------|------------|--------||---------|------------|--------|
+- [ ] Autenticación JWT
 
-| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) || Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |
+- [ ] Roles de usuario (Admin, Recepcionista, Cliente)``````
 
-| Tiempo total queries | 352 ms | 476 ms (estimado) || Tiempo total queries | 352 ms | 476 ms (estimado) |
+- [ ] Panel de administración
 
-| Uso de memoria | 186 MB | 2,213 MB || Uso de memoria | 186 MB | 2,213 MB |
+- [ ] Reportes en PDF
 
-| CPU | 0.04% | 3.41% || CPU | 0.04% | 3.41% |
+
+
+### v3.0.0## 📈 Resultados del Benchmark## 📈 Resultados del Benchmark
+
+- [ ] WebSockets para reservas en tiempo real
+
+- [ ] Sistema de notificaciones
+
+- [ ] Integración con pasarelas de pago
+
+- [ ] App móvil con React Native**PostgreSQL ganó en todas las categorías:****PostgreSQL ganó en todas las categorías:**
+
+
+
+---
+
+
+
+## 📞 Soporte| Métrica | PostgreSQL | Oracle || Métrica | PostgreSQL | Oracle |
+
+
+
+¿Tienes preguntas? Abre un [Issue](https://github.com/Jazavala1992/Proyecto_hotel/issues) o inicia una [Discusión](https://github.com/Jazavala1992/Proyecto_hotel/discussions).|---------|------------|--------||---------|------------|--------|
+
+
+
+---| Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) || Carga de datos (1.4M registros) | 11.41s | Timeout (>180s) |
+
+
+
+<div align="center">| Tiempo total queries | 352 ms | 476 ms (estimado) || Tiempo total queries | 352 ms | 476 ms (estimado) |
+
+
+
+**⭐ Si te gusta este proyecto, dale una estrella en GitHub ⭐**| Uso de memoria | 186 MB | 2,213 MB || Uso de memoria | 186 MB | 2,213 MB |
+
+
+
+[![GitHub stars](https://img.shields.io/github/stars/Jazavala1992/Proyecto_hotel?style=social)](https://github.com/Jazavala1992/Proyecto_hotel/stargazers)| CPU | 0.04% | 3.41% || CPU | 0.04% | 3.41% |
+
+[![GitHub forks](https://img.shields.io/github/forks/Jazavala1992/Proyecto_hotel?style=social)](https://github.com/Jazavala1992/Proyecto_hotel/network/members)
 
 | Cache hit ratio | 99.99% | 98.50% || Cache hit ratio | 99.99% | 98.50% |
 
+**Hecho con ❤️ y ☕ por Jose Zavala**
 
+
+
+</div>
 
 **Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.**Conclusión**: PostgreSQL es **350% más rápido** en carga de datos y usa **12x menos memoria**.
 
