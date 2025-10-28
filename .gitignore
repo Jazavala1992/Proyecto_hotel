@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+backend.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build directories
+dist/
+build/
+.next/
+out/
+
+# Coverage directory
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Database files (si usas SQLite local)
+*.sqlite
+*.sqlite3
+*.db
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# React
+.eslintcache
+
+# Testing
+.nyc_output/

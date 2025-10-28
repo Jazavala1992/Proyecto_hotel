@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-hotel
+    environment:
+      POSTGRES_USER: admin_hotel
+      POSTGRES_PASSWORD: hotel123
+      POSTGRES_DB: hotel_db
+      POSTGRES_INITDB_ARGS: "-E UTF8"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_hotel_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin_hotel -d hotel_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  oracle:
+    image: gvenzl/oracle-free:23-slim
+    container_name: oracle-hotel
+    environment:
+      ORACLE_PASSWORD: Oracle123
+      APP_USER: hotel_user
+      APP_USER_PASSWORD: hotel123
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_hotel_data:/opt/oracle/oradata
+      - ./init-scripts-oracle:/container-entrypoint-initdb.d
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+
+volumes:
+  postgres_hotel_data:
+    driver: local
+  oracle_hotel_data:
+    driver: local
